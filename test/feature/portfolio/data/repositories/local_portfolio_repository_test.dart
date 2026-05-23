@@ -28,17 +28,17 @@ void main() {
         expect(content.skillGroups, hasLength(3));
         expect(content.languages, hasLength(2));
         expect(content.featuredProjects, hasLength(4));
-        expect(content.archiveProjects, hasLength(4));
+        expect(content.archiveProjects, hasLength(5));
       },
     );
 
-    test('marks QuickNotion and the missing CV as coming soon', () async {
+    test('marks PageBridge and the missing CV as coming soon/private', () async {
       final content = await repository.getContent();
-      final quickNotion = content.featuredProjects.first;
+      final pageBridge = content.featuredProjects.first;
 
-      expect(quickNotion.title, 'QuickNotion');
-      expect(quickNotion.status, ProjectStatus.comingSoon);
-      expect(quickNotion.repoUrl, isNull);
+      expect(pageBridge.title, 'PageBridge');
+      expect(pageBridge.status, ProjectStatus.private);
+      expect(pageBridge.repoUrl, isNull);
       expect(content.profile.cvState, CvState.comingSoon);
     });
   });

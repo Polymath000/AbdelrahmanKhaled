@@ -38,11 +38,13 @@ class LocalPortfolioDataSource {
       ],
       featuredProjects: [
         ProjectItemModel(
-          title: 'QuickNotion',
+          title: 'PageBridge',
           summary:
               'A private Flutter app for capturing ideas quickly and syncing them to Notion through OAuth, database search, and property-aware page creation.',
           stack: ['Flutter', 'Dart', 'Notion API', 'Bloc/Cubit', 'GetIt'],
-          status: ProjectStatus.comingSoon,
+          status: ProjectStatus.private,
+          liveUrl:
+              'https://www.linkedin.com/posts/polymath00_%D9%84%D9%88-%D8%A8%D8%AA%D8%B3%D8%AA%D8%B9%D9%85%D9%84-%D9%86%D9%88%D8%B4%D9%86-%D8%A8%D8%B4%D9%83%D9%84-%D9%85%D8%B3%D8%AA%D9%85%D8%B1-%D8%A7%D9%83%D9%8A%D8%AF-%D9%82%D8%A7%D8%A8%D9%84%D8%AA-%D8%A7%D9%84%D9%85%D8%B4%D9%83%D9%84%D8%A9-ugcPost-7463861134610317312-BLk-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESBSTgBZv6V3uJinl-eBP7CYbdg715F0I8',
           imageAsset: 'assets/images/QuickNotio.png',
         ),
         ProjectItemModel(
@@ -109,6 +111,14 @@ class LocalPortfolioDataSource {
           status: ProjectStatus.public,
           repoUrl: 'https://github.com/Polymath000/MindFeed',
           imageAsset: 'assets/images/MindFeed.png',
+        ),
+        ProjectItemModel(
+          title: 'page.ui',
+          summary:
+              'A modern UI design and implementation showcasing layout structure and aesthetic components.',
+          stack: ['Flutter', 'Dart', 'UI/UX'],
+          status: ProjectStatus.public,
+          repoUrl: 'https://github.com/Polymath000/page.ui',
         ),
       ],
       contactLinks: [

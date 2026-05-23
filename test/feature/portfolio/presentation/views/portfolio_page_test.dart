@@ -55,11 +55,11 @@ void main() {
       expect(find.text('Flutter'), findsWidgets);
       expect(find.text('Firebase'), findsWidgets);
       await tester.scrollUntilVisible(
-        find.text('QuickNotion'),
+        find.text('PageBridge'),
         500,
         scrollable: find.byType(Scrollable),
       );
-      expect(find.text('QuickNotion'), findsOneWidget);
+      expect(find.text('PageBridge'), findsOneWidget);
       await tester.scrollUntilVisible(
         find.text('MindFeed'),
         500,
